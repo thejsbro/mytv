@@ -1,0 +1,30 @@
+
+.carousel-box {
+    display: inline-flex;
+    width: 100%;
+
+    .left-arrow {
+        float: left;
+        background-color: transparent;
+        padding: 10px;
+        font-size: 100px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .content {
+        padding-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .right-arrow {
+        float: right;
+        background-color: transparent;
+        padding: 10px;
+        font-size: 100px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

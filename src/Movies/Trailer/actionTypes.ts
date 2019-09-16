@@ -1,0 +1,2 @@
+export const TRAILER_LOADING = 'TRAILER_LOADING';
+export const TRAILER_LOADED = 'TRAILER_LOADED';

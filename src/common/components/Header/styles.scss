@@ -1,0 +1,13 @@
+@import 'common/styles.scss';
+
+.header {
+    min-height: 80px;
+    border-bottom: 1px solid gray;
+    padding: 0 12px;
+
+    .header__title {
+        @extend .text-large;
+        text-align: center;
+        line-height: 80px;
+    }
+}

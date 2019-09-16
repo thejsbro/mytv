@@ -1,0 +1,44 @@
+@import 'common/styles.scss';
+
+.movie-details {
+
+    &-poster {
+        height: 570px;
+        background-size: cover;
+        text-align: center;
+        &-info {
+            top: 50%;
+            align-items: center;
+            position: relative;
+            text-align: center;
+
+            &__trailer {
+                @extend .text-large;
+                background-color: rgba(0,0,0,.7);
+                cursor: pointer;
+                color: #fff;
+                padding: 10px;
+                text-decoration: none;
+                &:hover {
+                    color: orange;
+
+                    &:before {
+                        color: orange;
+                    }
+                }
+                &:before {
+                    color: #fff;
+                    content: '\25BA';
+                    margin-right: 10px;
+                }
+            }
+            &__text {
+                @extend .text-large;
+                padding: 7% 0;
+                color: #fff;
+                text-shadow: 0 1px 1px rgba(0,0,0,.8);
+            }
+        }
+    }
+
+}

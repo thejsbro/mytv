@@ -1,0 +1,18 @@
+.movie-list {
+    &__item {
+        display: inline-block;
+        width: 24%;
+        height: 24%;
+        margin: 0.3%;
+
+        &:hover {
+            border: solid 2px orange;
+        }
+    }
+
+    &__artwork {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

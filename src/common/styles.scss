@@ -1,0 +1,28 @@
+.text-large {
+    font-size:  40px;
+}
+
+.body {
+    min-width: 670px;
+    min-height: 100vh;
+}
+
+.back-button {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: bisque;
+    display: block;
+    text-align: center;
+    &:before{
+        content: '\2B05';
+        margin-right: 10px;
+    }
+}
+
+.center {
+    margin-top: 25%;
+    text-align: center;
+}
