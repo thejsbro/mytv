@@ -7,8 +7,9 @@ import './styles.scss';
 
 export const MoviesMain = () => {
     const list = LISTS_OF_MOVIES.map(
-        (listName) => (
+        (listName, i) => (
                 <NavLink
+                    data-testid={`go-to-list-of-movies-${i}`}
                     key={nanoid()}
                     to={`/lists/${listName}`}
                     exact
@@ -17,5 +18,10 @@ export const MoviesMain = () => {
                     {listName}
                 </NavLink>
         ));
-    return <Carousel>{list}</Carousel>
+    return (
+    <div data-testid='movies-main'>
+        <Carousel>
+            {list}
+        </Carousel>
+    </div>);
 }

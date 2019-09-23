@@ -39,7 +39,7 @@ class ListOfMovies extends React.Component<TProps> {
     render() {
         const {movies, history} = this.props;
         return (
-            <div>
+            <div data-testid='list-of-movies'>
                 <div className='back-button' onClick={history.goBack}>
                         Back
                 </div>

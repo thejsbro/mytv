@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": "build/dist",
+    "outDir": "/",
     "module": "commonjs",
-    "target": "es2018",
+    "target": "es2015",
     "lib": [
       "es6",
       "dom"
@@ -26,14 +26,6 @@
   ],
   "exclude": [
     "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts"
+    "dist",
   ],
-  "types": [
-    "typePatches"
-  ]
 }

@@ -1,0 +1,40 @@
+{
+    "presets": [
+        "@babel/react", 
+        "@babel/typescript",
+        [
+            "@babel/env",
+            {
+            "targets": {
+                "browsers": [
+                    "last 2 ChromeAndroid versions",
+                    "last 2 Chrome versions",
+                    "last 2 Firefox versions",
+                    "last 2 FirefoxAndroid versions",
+                    "last 2 Opera versions",
+                    "last 2 OperaMobile versions",
+                    "last 2 Safari versions",
+                    "ie >= 11"
+                  ]
+            },
+            "modules": false
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-class-properties"
+    ],
+    "env": {
+        "test": {
+            "plugins": [
+                "transform-es2015-modules-commonjs",
+                ["module-resolver", {
+                    "root": ["./"],
+                    "alias": {
+                        "common": "./src/common"
+                    }
+                }]
+            ]
+        }
+    }
+}

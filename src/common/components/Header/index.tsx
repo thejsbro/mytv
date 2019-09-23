@@ -11,7 +11,7 @@ const Header = ({title}: IProps) => (
     <header
         className='header'
     >
-        <div className='header__title'>
+        <div data-testid='header' className='header__title'>
             {title}
         </div>
     </header>

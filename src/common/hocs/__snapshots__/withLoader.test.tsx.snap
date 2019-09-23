@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can render when loaded 1`] = `
+<div>
+  <p>
+    Test App
+  </p>
+</div>
+`;
+
+exports[`can render when loading 1`] = `
+<div>
+  <div
+    class="center text-large"
+    data-testid="loading"
+  >
+    Loading...
+  </div>
+</div>
+`;

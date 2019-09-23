@@ -4,7 +4,7 @@ import { MoviesMain } from './Movies/CategoryList';
 import { ListOfMovies } from './Movies/ListOfMovies';
 import { MovieDetails } from './Movies/MovieDetails';
 import { Trailer } from './Movies/Trailer';
-import 'common/styles.scss';
+import '../common/styles.scss';
 
 interface MatchParams {
     id: string;
@@ -42,7 +42,3 @@ export const Routes = () => (
         </Switch>
     </main>
 )
-
-                /* render={
-                    ({match}: MatchProps) => <Movies listName={match.params.listName}/>
-                } */
